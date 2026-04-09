@@ -9,7 +9,7 @@ export default function ClientLayout({ children }: { children: ReactNode }) {
   return (
     <LocaleProvider>
       <Header />
-      <main className="flex-1 pt-20">{children}</main>
+      <main className="flex-1 pt-20 overflow-x-hidden">{children}</main>
       <Footer />
     </LocaleProvider>
   );

@@ -168,6 +168,12 @@ html[dir="rtl"] {
 .scroll-section {
   position: relative;
   padding: 6rem 0;
+  overflow-x: hidden;
+}
+@media (max-width: 640px) {
+  .scroll-section {
+    padding: 3rem 0;
+  }
 }
 .scroll-section::before,
 .scroll-section::after {

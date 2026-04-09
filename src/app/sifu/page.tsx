@@ -67,7 +67,7 @@ export default function SifuPage() {
               {locale === "he" ? "תחומי ריפוי" : "Healing Specializations"}
             </h2>
             <div className="brush-stroke mb-8" />
-            <div className="grid grid-cols-2 gap-px bg-ink/5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-ink/5">
               {(locale === "he"
                 ? ["צ'י קונג ריפוי", "הילינג סיני – פרח הלוטוס", "אן-מו (עיסוי אורטופדי סיני)", "דיקור יבש אורטופדי"]
                 : ["Chi Kung Healing", "Chinese Healing – Lotus Flower", "An-Mo (Chinese Orthopedic Massage)", "Orthopedic Dry Needling"]
