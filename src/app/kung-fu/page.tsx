@@ -24,7 +24,7 @@ export default function KungFuPage() {
         <div className="max-w-3xl mx-auto space-y-20">
           {/* Etymology */}
           <div className="text-center">
-            <div className="flex justify-center gap-16 mb-10">
+            <div className="flex justify-center gap-8 sm:gap-16 mb-10">
               <div>
                 <span className="text-7xl text-ink/10 font-serif">功</span>
                 <p className="mt-2 text-xs text-stone-warm tracking-wide">

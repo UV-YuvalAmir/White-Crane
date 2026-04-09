@@ -50,13 +50,13 @@ export default function Home() {
         </div>
 
         {/* Logo and title overlay */}
-        <div className="relative -mt-32 z-10 text-center px-6 pb-16">
+        <div className="relative -mt-20 sm:-mt-32 z-10 text-center px-6 pb-10 sm:pb-16">
           <Image
             src="/images/logo.png"
             alt="White Crane Center Logo"
             width={200}
             height={200}
-            className="mx-auto mb-6 drop-shadow-lg"
+            className="mx-auto mb-6 drop-shadow-lg w-32 sm:w-40 md:w-[200px] h-auto"
           />
           <h1 className="text-3xl md:text-5xl heading-calligraphy text-ink mb-4 opacity-0 animate-rise delay-200">
             {locale === "he" ? "מרכז עגור לבן" : "White Crane Center"}
@@ -192,7 +192,7 @@ export default function Home() {
             {blogPosts[locale].map((post, i) => (
               <Link key={i} href={post.href}>
                 <article
-                  className="group flex gap-6 items-start p-6 border-b border-paper/5 hover:bg-paper/[0.03] transition-all duration-500 opacity-0 animate-rise"
+                  className="group flex gap-4 sm:gap-6 items-start p-4 sm:p-6 border-b border-paper/5 hover:bg-paper/[0.03] transition-all duration-500 opacity-0 animate-rise"
                   style={{ animationDelay: `${i * 0.15}s`, animationFillMode: "forwards" }}
                 >
                   <Image
@@ -237,7 +237,7 @@ export default function Home() {
       {/* === SCENE 5: Contact === */}
       <section className="scroll-section">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-start">
             <div>
               <h2 className="text-2xl md:text-3xl heading-calligraphy text-ink mb-6">
                 {tr.home.contactUs}

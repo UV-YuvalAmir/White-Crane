@@ -11,7 +11,7 @@ interface PageHeroProps {
 
 export default function PageHero({ title, subtitle, character, backgroundImage }: PageHeroProps) {
   return (
-    <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[35vh] md:min-h-[50vh] flex items-center justify-center overflow-hidden">
       {/* Background image */}
       {backgroundImage ? (
         <>
@@ -39,7 +39,7 @@ export default function PageHero({ title, subtitle, character, backgroundImage }
         </div>
       )}
 
-      <div className="relative z-10 text-center px-6 py-32 max-w-3xl mx-auto">
+      <div className="relative z-10 text-center px-6 py-16 md:py-32 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl heading-calligraphy text-ink mb-6 opacity-0 animate-rise">
           {title}
         </h1>

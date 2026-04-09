@@ -47,7 +47,7 @@ export default function ChiKungPage() {
           <Image src="/images/chikung-class.jpg" alt="Chi Kung class" width={1024} height={768} className="w-full h-auto grayscale contrast-[1.1] opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700" style={{ mixBlendMode: "multiply" }} />
 
           {/* Etymology */}
-          <div className="flex justify-center gap-16">
+          <div className="flex justify-center gap-8 sm:gap-16">
             <div className="text-center">
               <span className="text-6xl text-seal/20 font-serif">氣</span>
               <p className="mt-2 text-xs text-stone-warm">

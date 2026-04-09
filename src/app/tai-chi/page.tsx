@@ -39,7 +39,7 @@ export default function TaiChiPage() {
         <div className="max-w-3xl mx-auto space-y-20">
           {/* Characters */}
           <div className="text-center">
-            <div className="flex justify-center gap-16 mb-6">
+            <div className="flex justify-center gap-8 sm:gap-16 mb-6">
               <div>
                 <span className="text-7xl text-ink/10 font-serif">太</span>
                 <p className="mt-2 text-xs text-stone-warm">{locale === "he" ? "טאי = גדול" : "Tai = Great"}</p>

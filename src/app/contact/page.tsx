@@ -17,7 +17,7 @@ export default function ContactPage() {
 
       <section className="scroll-section px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
             <div>
               <h2 className="text-xl heading-calligraphy text-ink mb-4">
                 {locale === "he" ? "כתובת בית הספר" : "School Address"}

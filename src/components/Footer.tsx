@@ -23,12 +23,12 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-paper/10 to-transparent" />
 
       {/* Watermark */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20rem] text-paper/[0.02] font-serif pointer-events-none select-none leading-none">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10rem] md:text-[20rem] text-paper/[0.02] font-serif pointer-events-none select-none leading-none">
         道
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+      <div className="relative max-w-5xl mx-auto px-6 lg:px-8 py-12 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-6">

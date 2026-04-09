@@ -40,7 +40,7 @@ export default function PhotoGalleryPage() {
                   alt={photo.alt}
                   width={600}
                   height={400}
-                  className="w-full h-72 object-cover grayscale contrast-[1.05] opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                  className="w-full h-48 sm:h-64 lg:h-72 object-cover grayscale contrast-[1.05] opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                   style={{ mixBlendMode: "multiply" }}
                 />
                 <div className="absolute inset-0 bg-seal-red/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
