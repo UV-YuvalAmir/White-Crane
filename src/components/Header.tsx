@@ -53,11 +53,21 @@ export default function Header() {
       href: "/treatments/healing",
       children: [
         { label: tr.nav.healing, href: "/treatments/healing" },
+        { label: tr.nav.anMo, href: "/treatments/an-mo" },
         { label: tr.nav.dryNeedling, href: "/treatments/dry-needling" },
         { label: tr.nav.testimonials, href: "/testimonials" },
       ],
     },
-    { label: tr.nav.courses, href: "/courses" },
+    {
+      label: tr.nav.courses,
+      href: "/courses",
+      children: [
+        { label: tr.nav.healingCourse, href: "/courses/healing" },
+        { label: tr.nav.foundationsCourse, href: "/courses/foundations" },
+        { label: tr.nav.anMoCourse, href: "/courses/an-mo-tuina" },
+        { label: tr.nav.feldenkrais, href: "/courses/feldenkrais" },
+      ],
+    },
     { label: tr.nav.blog, href: "/blog" },
     { label: tr.nav.contact, href: "/contact" },
   ];
