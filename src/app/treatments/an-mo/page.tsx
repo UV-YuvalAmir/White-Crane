@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocale } from "@/lib/locale-context";
 import PageHero from "@/components/PageHero";
 
@@ -55,6 +56,16 @@ export default function AnMoPage() {
               </p>
             </div>
           </div>
+
+          {/* Image */}
+          <Image
+            src="/images/massage-anmo-lg.jpg"
+            alt={locale === "he" ? "אן-מו עיסוי סיני" : "An-Mo Chinese Massage"}
+            width={800}
+            height={533}
+            className="w-full h-auto grayscale contrast-[1.1] opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+            style={{ mixBlendMode: "multiply" }}
+          />
 
           {/* Description */}
           <div className="text-stone-warm text-sm leading-[2] space-y-4">

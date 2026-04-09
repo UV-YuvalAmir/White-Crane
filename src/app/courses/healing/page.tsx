@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocale } from "@/lib/locale-context";
 import PageHero from "@/components/PageHero";
 
@@ -153,6 +154,15 @@ export default function HealingCoursePage() {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Course images */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-ink/5">
+            {["/images/course-healing-student1.jpg", "/images/course-healing-class.jpg", "/images/course-healing-practice.jpg"].map((src, i) => (
+              <div key={i} className="bg-paper">
+                <Image src={src} alt="Healing course" width={400} height={300} className="w-full h-48 object-cover grayscale contrast-[1.1] opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700" style={{ mixBlendMode: "multiply" }} />
+              </div>
+            ))}
           </div>
 
           {/* Details */}

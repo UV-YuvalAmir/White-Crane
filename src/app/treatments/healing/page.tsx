@@ -37,7 +37,7 @@ export default function HealingPage() {
             )}
           </div>
 
-          <Image src="/images/healing-treatment-lg.jpg" alt="Chinese Healing treatment" width={800} height={533} className="w-full h-auto grayscale contrast-[1.1] opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700" style={{ mixBlendMode: "multiply" }} />
+          <Image src="/images/healing-lotus-lg.jpg" alt="Chinese Healing – Lotus Flower" width={800} height={533} className="w-full h-auto grayscale contrast-[1.1] opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700" style={{ mixBlendMode: "multiply" }} />
 
           <div className="text-center bg-ink text-paper py-12 px-8">
             <p className="heading-calligraphy text-lg text-paper/80">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useLocale } from "@/lib/locale-context";
 import PageHero from "@/components/PageHero";
 
@@ -52,6 +53,15 @@ export default function LionDancePage() {
                   <span className="text-seal/30 font-serif">狮</span>
                 </h2>
               </div>
+
+              {/* Lion image */}
+              <Image
+                src="/images/lion-dance.jpg"
+                alt={locale === "he" ? "ריקוד האריה הסיני" : "Chinese Lion Dance"}
+                width={800}
+                height={600}
+                className="w-full h-auto hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+              />
 
               <div className="text-center text-stone-warm text-sm leading-[2] max-w-xl mx-auto space-y-4">
                 {locale === "he" ? (
