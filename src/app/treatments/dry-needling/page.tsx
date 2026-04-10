@@ -33,13 +33,76 @@ export default function DryNeedlingPage() {
             <div className="text-stone-warm text-sm leading-[2] space-y-4">
               {locale === "he" ? (
                 <>
-                  <p>נקודות בשרירים שבהן מתרכז מתח ולחץ עליהן מעורר כאב. הגורמים כוללים עומס יתר, תנוחה לקויה, מתח, תנועות חדות או חבלה ישירה.</p>
-                  <p>מחקרים עדכניים מראים ש-75 אחוז מכאבי הגוף מקורם בשרירים.</p>
+                  <p>נקודות טריגר הן אזורים מקומיים בתוך השרירים (לעיתים בגידים או בפאשיה) שבהם מתרכז מתח. לחץ עליהן מעורר כאב שעלול להקרין לאזורים אחרים בגוף. הגורמים כוללים עומס יתר על השריר, תנוחה לקויה, מתח רגשי, תנועות חדות או חבלה ישירה ברקמת השריר.</p>
+                  <p>מחקרים עדכניים מראים ש-75 אחוז מכאבי הגוף מקורם בשרירים, מה שהופך את הטיפול בנקודות טריגר לאפקטיבי במיוחד לניהול כאב ולשיקום טווח תנועה.</p>
                 </>
               ) : (
                 <>
-                  <p>Points in muscles where tension concentrates and pressure triggers pain. Causes include muscle overload, poor posture, stress, sharp movements, or direct trauma.</p>
-                  <p>Current studies indicate 75 percent of body pain originates from muscles.</p>
+                  <p>Trigger points are localized areas within muscles (sometimes in tendons or fascia) where tension concentrates. Pressure on these points triggers pain that can radiate to other areas of the body. Causes include muscle overload, poor posture, emotional stress, sharp movements, or direct trauma to muscle tissue.</p>
+                  <p>Current studies indicate 75 percent of body pain originates from muscles, making trigger point therapy particularly effective for pain management and restoring range of motion.</p>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Sarcomere Physiology */}
+          <div>
+            <h2 className="text-xl heading-calligraphy text-ink mb-4">
+              {locale === "he" ? "הפיזיולוגיה – סרקומרים" : "Physiology – Sarcomeres"}
+            </h2>
+            <div className="brush-stroke mb-8" />
+            <div className="text-stone-warm text-sm leading-[2] space-y-4">
+              {locale === "he" ? (
+                <>
+                  <p>סרקומרים הם יחידות ההתכווצות הבסיסיות של השריר. כאשר עצב מגרה שריר באופן מוגזם או מתמשך, הסרקומרים נשארים במצב של התכווצות קבועה. מצב זה יוצר את נקודת הטריגר – אזור מקומי של מתח כרוני בתוך השריר.</p>
+                  <p>ההתכווצות המתמשכת גורמת לכאב שמקרין לאורך השריר ועלול להגיע למפרקים המחוברים אליו. זו הסיבה שכאב בכתף, למשל, יכול לנבוע מנקודת טריגר בשריר הצוואר.</p>
+                </>
+              ) : (
+                <>
+                  <p>Sarcomeres are the basic contraction units of muscles. When a nerve overstimulates a muscle excessively or continuously, the sarcomeres remain in a state of constant contraction. This creates the trigger point -- a localized area of chronic tension within the muscle.</p>
+                  <p>The continuous contraction causes pain that radiates along the length of the muscle and can reach connected joints. This is why shoulder pain, for example, can originate from a trigger point in the neck muscle.</p>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Research History */}
+          <div>
+            <h2 className="text-xl heading-calligraphy text-ink mb-4">
+              {locale === "he" ? "היסטוריה מחקרית" : "Research History"}
+            </h2>
+            <div className="brush-stroke mb-8" />
+            <div className="text-stone-warm text-sm leading-[2] space-y-4">
+              {locale === "he" ? (
+                <>
+                  <p>המחקר על נקודות טריגר החל בשנות ה-40 של המאה ה-20. מאז, נקודות הטריגר מופו באמצעות מפות סטנדרטיות המציגות את מיקומן המדויק ואת דפוסי הכאב המוקרן שלהן, בהתבסס על אנטומיה ופיזיולוגיה מערבית.</p>
+                  <p>שיטת הדיקור היבש עצמה פותחה בשנות ה-60 בארצות הברית, כאשר לטיפול המסורתי בלחץ נוספו מחטים דקות שהעצימו את האפקט הטיפולי.</p>
+                </>
+              ) : (
+                <>
+                  <p>Research on trigger points began in the 1940s. Since then, trigger points have been mapped using standardized charts showing their precise locations and referred pain patterns, based on Western anatomy and physiology.</p>
+                  <p>The dry needling method itself was developed in the 1960s in the United States, when fine needles were added to traditional pressure-based treatment, amplifying the therapeutic effect.</p>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Active vs Dormant */}
+          <div>
+            <h2 className="text-xl heading-calligraphy text-ink mb-4">
+              {locale === "he" ? "נקודות פעילות ורדומות" : "Active vs. Dormant Trigger Points"}
+            </h2>
+            <div className="brush-stroke mb-8" />
+            <div className="text-stone-warm text-sm leading-[2] space-y-4">
+              {locale === "he" ? (
+                <>
+                  <p><strong>נקודות טריגר פעילות</strong> – גורמות לכאב מתמשך גם ללא מגע. הן מקרינות כאב לאזורים אחרים בגוף ומגבילות את טווח התנועה. מצבן עלול להחמיר עם הזמן אם לא מטופלות.</p>
+                  <p><strong>נקודות טריגר רדומות</strong> – אינן גורמות לכאב ספונטני, אך מעוררות כאב מקומי ותחושות מוקרנות בעת מגע או לחץ. הן עלולות להפוך לפעילות בעקבות עומס, מתח או פציעה.</p>
+                </>
+              ) : (
+                <>
+                  <p><strong>Active trigger points</strong> cause persistent pain even without touch. They radiate pain to other areas and limit range of motion. Their condition may worsen over time if left untreated.</p>
+                  <p><strong>Dormant trigger points</strong> do not cause spontaneous pain, but produce local pain and referred sensations upon contact or pressure. They can become active following overload, stress or injury.</p>
                 </>
               )}
             </div>

@@ -66,6 +66,7 @@ export default function Header() {
         { label: tr.nav.foundationsCourse, href: "/courses/foundations" },
         { label: tr.nav.anMoCourse, href: "/courses/an-mo-tuina" },
         { label: tr.nav.feldenkrais, href: "/courses/feldenkrais" },
+        { label: tr.nav.yoga, href: "/courses/yoga" },
       ],
     },
     { label: tr.nav.blog, href: "/blog" },

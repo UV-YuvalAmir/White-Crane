@@ -86,13 +86,89 @@ export default function AboutPage() {
             <div className="space-y-4 text-stone-warm text-sm leading-[2]">
               {locale === "he" ? (
                 <>
-                  <p>מרכז עגור לבן ממוקם בהוד השרון ומציע מגוון רחב של חוגים, קורסים וסדנאות באומנויות לחימה סיניות, צ&apos;י קונג, מדיטציה וטיפולים אנרגטיים.</p>
-                  <p>המרכז מהווה בית לקהילה רחבה של תלמידים ומתרגלים, המחוברים למסורת הסינית העתיקה ולערכים של כבוד, התמדה והתפתחות אישית.</p>
+                  <p>מרכז עגור לבן הוא מרכז ללימודי אומנויות הלחימה והבריאות הסיניות, לטיפולים, לסדנאות ולחוגים בתחום המודעות – גוף נפש. מטרתו – להיות בית. להציע לכם מגוון פעילויות ייחודיות ומעשירות, באמצעותן תוכלו לטפח את גופכם, נפשכם, בריאותכם וחייכם.</p>
+                  <p>מגיעים אליו ילדים החל מגיל 9 ללימוד קונג פו ומבוגרים עד מעל גיל 80, ללימודי טאי צ&apos;י וצ&apos;י קונג.</p>
                 </>
               ) : (
                 <>
-                  <p>White Crane Center is located in Hod HaSharon and offers a wide range of classes, courses, and workshops in Chinese martial arts, Chi Kung, meditation, and energy treatments.</p>
-                  <p>The center is home to a broad community of students and practitioners, connected to the ancient Chinese tradition and the values of respect, perseverance, and personal development.</p>
+                  <p>The White Crane Center is a center for the study of Chinese martial arts and health, treatments, workshops and classes in the field of body-mind awareness. Its purpose is to be a home -- to offer a variety of unique and enriching activities through which you can nurture your body, soul, health and life.</p>
+                  <p>Children from age 9 come to study Kung Fu, and adults up to over 80 study Tai Chi and Chi Kung.</p>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* History */}
+          <div className="relative">
+            <div className="watermark -top-10 right-0">歷</div>
+            <h2 className="text-xl heading-calligraphy text-ink mb-4 relative z-10">
+              {locale === "he" ? "ההיסטוריה" : "History"}
+            </h2>
+            <div className="brush-stroke mb-8" />
+            <div className="space-y-4 text-stone-warm text-sm leading-[2]">
+              {locale === "he" ? (
+                <>
+                  <p>בשנת 1998, סיפו צחי שוחט פתח את &quot;בית ספר לקונג פו עגור לבן ישראל&quot; בהוד השרון. בית הספר המשיך את המסורת העתיקה של נזירים טיבטים ומורים סיניים שטיפחו אומנויות לחימה, פילוסופיה, רפואה הוליסטית ופרקטיקות רוחניות.</p>
+                  <p>בשנת 2017 נפתח מרכז עגור לבן במתכונתו הנוכחית – כמרכז הוליסטי המציע מגוון פעילויות רחב: קונג פו עגור לבן, טאי צ&apos;י, צ&apos;י קונג ומדיטציה, הילינג סיני – פרח הלוטוס, ריקוד האריה הסיני, טיפולי אן-מו ודיקור יבש, פלדנקרייז וויג&apos;נאנה יוגה.</p>
+                </>
+              ) : (
+                <>
+                  <p>In 1998, Sifu Tzachi Shuhat opened the &quot;White Crane Kung Fu School Israel&quot; in Hod HaSharon. The school continued the ancient tradition of Tibetan monks and Chinese teachers who cultivated martial arts, philosophy, holistic medicine and spiritual practices.</p>
+                  <p>In 2017, the White Crane Center opened in its current format -- as a holistic center offering a wide range of activities: White Crane Kung Fu, Tai Chi, Chi Kung and Meditation, Chinese Healing -- Lotus Flower, Chinese Lion Dance, An-Mo and Dry Needling treatments, Feldenkrais, and Vijnana Yoga.</p>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Services */}
+          <div className="relative">
+            <h2 className="text-xl heading-calligraphy text-ink mb-4">
+              {locale === "he" ? "מה תמצאו אצלנו" : "What You Will Find"}
+            </h2>
+            <div className="brush-stroke mb-8" />
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-ink/5">
+              {(locale === "he"
+                ? ["קונג פו", "טאי צ'י", "צ'י קונג ומדיטציה", "הילינג סיני – פרח הלוטוס", "ריקוד האריה", "ויג'נאנה יוגה", "פלדנקרייז", "דיקור יבש אורטופדי", "אן-מו – עיסוי סיני"]
+                : ["Kung Fu", "Tai Chi", "Chi Kung & Meditation", "Chinese Healing – Lotus Flower", "Lion Dance", "Vijnana Yoga", "Feldenkrais", "Orthopedic Dry Needling", "An-Mo – Chinese Massage"]
+              ).map((service, i) => (
+                <div key={i} className="bg-paper py-4 px-5 text-sm text-stone-warm">{service}</div>
+              ))}
+            </div>
+          </div>
+
+          {/* Center Gallery */}
+          <div className="relative">
+            <h2 className="text-xl heading-calligraphy text-ink mb-4">
+              {locale === "he" ? "המרכז שלנו" : "Our Center"}
+            </h2>
+            <div className="brush-stroke mb-8" />
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              {[1, 2, 3, 4, 5].map((n) => (
+                <Image
+                  key={n}
+                  src={`/images/center-gallery${n}.jpg`}
+                  alt={locale === "he" ? `מרכז עגור לבן ${n}` : `White Crane Center ${n}`}
+                  width={400}
+                  height={300}
+                  className="w-full h-auto grayscale contrast-[1.1] opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+                  style={{ mixBlendMode: "multiply" }}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Facilities */}
+          <div className="bg-ink/[0.02] p-8">
+            <div className="space-y-4 text-stone-warm text-sm leading-[2]">
+              {locale === "he" ? (
+                <>
+                  <p>המרכז כולל אולם תרגול מרווח וקליניקה נעימה לטיפולים. ניתן לשכור את מרחב התרגול ואת הקליניקה לסדנאות, הרצאות וטיפולים.</p>
+                  <p>שיעור ניסיון ראשון חינם – בואו להתנסות!</p>
+                </>
+              ) : (
+                <>
+                  <p>The center includes a spacious training hall and a pleasant treatment clinic. The training space and clinic are available for rent for workshops, lectures and treatments.</p>
+                  <p>First trial class is free -- come try it out!</p>
                 </>
               )}
             </div>
