@@ -34,9 +34,9 @@ export default function RootLayout({
     <html
       lang="he"
       dir="rtl"
-      className={`${heebo.variable} ${notoSerif.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${heebo.variable} ${notoSerif.variable} ${geistMono.variable} h-full antialiased overflow-x-hidden`}
     >
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col overflow-x-hidden" suppressHydrationWarning>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

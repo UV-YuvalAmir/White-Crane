@@ -37,12 +37,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-heebo), Arial, sans-serif;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 html[dir="rtl"] {
@@ -293,10 +297,15 @@ html[dir="rtl"] {
 /* === Chinese character watermark === */
 .watermark {
   position: absolute;
-  font-size: 15rem;
+  font-size: 8rem;
   color: rgba(26,26,26,0.03);
   font-family: serif;
   pointer-events: none;
   user-select: none;
   line-height: 1;
+}
+@media (min-width: 640px) {
+  .watermark {
+    font-size: 15rem;
+  }
 }
