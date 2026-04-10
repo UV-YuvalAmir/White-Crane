@@ -53,6 +53,31 @@ html[dir="rtl"] {
   text-align: right;
 }
 
+/* Mobile: tighter spacing and prevent overflow */
+@media (max-width: 640px) {
+  .px-6 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .space-y-20 > * + * {
+    margin-top: 3rem !important;
+  }
+  .space-y-16 > * + * {
+    margin-top: 2.5rem !important;
+  }
+  .gap-10 {
+    gap: 1.5rem !important;
+  }
+}
+
+/* Ensure all content stays within viewport */
+section, main, div {
+  max-width: 100vw;
+}
+img, video, iframe {
+  max-width: 100%;
+}
+
 /* === Paper texture overlay === */
 .paper-texture {
   position: relative;
