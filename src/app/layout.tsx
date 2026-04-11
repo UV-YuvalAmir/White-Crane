@@ -21,8 +21,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "מרכז עגור לבן | White Crane Center - Pak Hok Pai",
-  description: "אומנויות לחימה ובריאות הגוף והנפש - קונג פו, טאי צ'י, צ'י קונג, הילינג סיני",
+  title: {
+    default: "מרכז עגור לבן | White Crane Center - Pak Hok Pai",
+    template: "%s | מרכז עגור לבן",
+  },
+  description:
+    "מרכז עגור לבן - בית ספר לאומנויות לחימה סיניות ובריאות הגוף והנפש. קונג פו פאק הוק פאי, טאי צ׳י, צ׳י קונג, הילינג סיני, עיסוי סיני ודיקור יבש.",
+  keywords: [
+    "מרכז עגור לבן",
+    "White Crane Center",
+    "קונג פו",
+    "טאי צ׳י",
+    "צ׳י קונג",
+    "הילינג סיני",
+    "פאק הוק פאי",
+    "Pak Hok Pai",
+    "אומנויות לחימה",
+    "עיסוי סיני",
+    "דיקור יבש",
+  ],
+  openGraph: {
+    title: "מרכז עגור לבן | White Crane Center",
+    description:
+      "בית ספר לאומנויות לחימה סיניות ובריאות הגוף והנפש. קונג פו, טאי צ׳י, צ׳י קונג, הילינג סיני ועוד.",
+    locale: "he_IL",
+    type: "website",
+    siteName: "מרכז עגור לבן",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
