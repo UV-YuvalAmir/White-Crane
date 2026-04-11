@@ -24,63 +24,63 @@ const categories: { key: Category; he: string; en: string }[] = [
   { key: "kungfu", he: "קונג פו", en: "Kung Fu" },
 ];
 
-const WP = "https://www.pakhokpai.co.il/wp-content/uploads";
+const G = "/images/gallery";
 
 const photos: Photo[] = [
   // === בין הדברים (General) ===
-  { src: `${WP}/2018/08/DSCF0922-Small.jpg`, alt: "White Crane general 1", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
-  { src: `${WP}/2018/08/DSCF0939-Small.jpg`, alt: "White Crane general 2", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
-  { src: `${WP}/2018/08/DSCF3331-Small.jpg`, alt: "White Crane general 3", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
-  { src: `${WP}/2018/08/IMG_0006-Large.jpg`, alt: "White Crane general 4", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
-  { src: `${WP}/2018/08/IMG_9528-Large.jpg`, alt: "White Crane general 5", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
-  { src: `${WP}/2018/08/DSCF1524-Small.jpg`, alt: "White Crane general 6", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
-  { src: `${WP}/2018/08/IMG_7012-Small.jpg`, alt: "White Crane general 7", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
-  { src: `${WP}/2018/08/IMG_5334-Large.jpg`, alt: "White Crane general 8", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
+  { src: `${G}/general-1.jpg`, alt: "White Crane general 1", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
+  { src: `${G}/general-2.jpg`, alt: "White Crane general 2", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
+  { src: `${G}/general-3.jpg`, alt: "White Crane general 3", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
+  { src: `${G}/general-4.jpg`, alt: "White Crane general 4", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
+  { src: `${G}/general-5.jpg`, alt: "White Crane general 5", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
+  { src: `${G}/general-6.jpg`, alt: "White Crane general 6", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
+  { src: `${G}/general-7.jpg`, alt: "White Crane general 7", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
+  { src: `${G}/general-8.jpg`, alt: "White Crane general 8", title: { he: "בין הדברים", en: "Between Things" }, category: "general" },
 
   // === ריקוד האריה (Lion Dance) ===
-  { src: `${WP}/2018/08/IMG_1119-Small.jpg`, alt: "Lion Dance performance 1", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
-  { src: `${WP}/2018/08/0839-Small.jpg`, alt: "Lion Dance performance 2", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
-  { src: `${WP}/2018/08/0842-Small.jpg`, alt: "Lion Dance performance 3", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
-  { src: `${WP}/2018/08/DSC_3350-Small.jpg`, alt: "Lion Dance performance 4", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
-  { src: `${WP}/2018/08/1DL0743-1-Small.jpg`, alt: "Lion Dance performance 5", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
-  { src: `${WP}/2018/08/1DL0773-1-Small.jpg`, alt: "Lion Dance performance 6", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
-  { src: `${WP}/2018/08/17-Medium.jpg`, alt: "Lion Dance performance 7", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
+  { src: `${G}/liondance-1.jpg`, alt: "Lion Dance performance 1", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
+  { src: `${G}/liondance-2.jpg`, alt: "Lion Dance performance 2", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
+  { src: `${G}/liondance-3.jpg`, alt: "Lion Dance performance 3", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
+  { src: `${G}/liondance-4.jpg`, alt: "Lion Dance performance 4", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
+  { src: `${G}/liondance-5.jpg`, alt: "Lion Dance performance 5", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
+  { src: `${G}/liondance-6.jpg`, alt: "Lion Dance performance 6", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
+  { src: `${G}/liondance-7.jpg`, alt: "Lion Dance performance 7", title: { he: "ריקוד האריה", en: "Lion Dance" }, category: "liondance" },
 
   // === הילינג סיני (Chinese Healing) ===
-  { src: `${WP}/2018/08/IMG_20180610_125437_2-Small.jpg`, alt: "Chinese Healing session 1", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
-  { src: `${WP}/2018/08/IMG_1127-Custom.jpg`, alt: "Chinese Healing session 2", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
-  { src: `${WP}/2018/08/IMG_1129-Custom.jpg`, alt: "Chinese Healing session 3", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
-  { src: `${WP}/2018/08/IMG_1124-Custom.jpg`, alt: "Chinese Healing session 4", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
-  { src: `${WP}/2018/08/IMG_20170210_104908-Small.jpg`, alt: "Chinese Healing session 5", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
-  { src: `${WP}/2018/08/IMG_9429-Small.jpg`, alt: "Chinese Healing session 6", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
-  { src: `${WP}/2018/08/IMG_9431-Small.jpg`, alt: "Chinese Healing session 7", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
+  { src: `${G}/healing-1.jpg`, alt: "Chinese Healing session 1", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
+  { src: `${G}/healing-2.jpg`, alt: "Chinese Healing session 2", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
+  { src: `${G}/healing-3.jpg`, alt: "Chinese Healing session 3", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
+  { src: `${G}/healing-4.jpg`, alt: "Chinese Healing session 4", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
+  { src: `${G}/healing-5.jpg`, alt: "Chinese Healing session 5", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
+  { src: `${G}/healing-6.jpg`, alt: "Chinese Healing session 6", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
+  { src: `${G}/healing-7.jpg`, alt: "Chinese Healing session 7", title: { he: "הילינג סיני", en: "Chinese Healing" }, category: "healing" },
 
   // === צ'י קונג (Chi Kung) ===
-  { src: `${WP}/2018/06/IMG_5884-Medium.jpg`, alt: "Chi Kung practice 1", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
-  { src: `${WP}/2018/08/IMG_4480-Large.jpg`, alt: "Chi Kung practice 2", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
-  { src: `${WP}/2018/08/IMG_4482-Large.jpg`, alt: "Chi Kung practice 3", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
-  { src: `${WP}/2018/07/IMG_4529-Large.jpg`, alt: "Chi Kung practice 4", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
-  { src: `${WP}/2018/07/IMG_4530-Large.jpg`, alt: "Chi Kung practice 5", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
+  { src: `${G}/chikung-1.jpg`, alt: "Chi Kung practice 1", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
+  { src: `${G}/chikung-2.jpg`, alt: "Chi Kung practice 2", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
+  { src: `${G}/chikung-3.jpg`, alt: "Chi Kung practice 3", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
+  { src: `${G}/chikung-4.jpg`, alt: "Chi Kung practice 4", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
+  { src: `${G}/chikung-5.jpg`, alt: "Chi Kung practice 5", title: { he: "צ'י קונג", en: "Chi Kung" }, category: "chikung" },
 
   // === טאי צ'י (Tai Chi) ===
-  { src: `${WP}/2018/08/DSCF1176-Small.jpg`, alt: "Tai Chi practice 1", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
-  { src: `${WP}/2018/08/DSCF1183-Small.jpg`, alt: "Tai Chi practice 2", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
-  { src: `${WP}/2018/07/DSC_0101-Medium.jpg`, alt: "Tai Chi practice 3", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
-  { src: `${WP}/2018/07/DSCF4285-Small.jpg`, alt: "Tai Chi practice 4", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
-  { src: `${WP}/2018/07/IMG_4531-Large.jpg`, alt: "Tai Chi practice 5", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
-  { src: `${WP}/2018/06/DSC_6376-Large.jpg`, alt: "Tai Chi practice 6", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
-  { src: `${WP}/2018/07/DSC_6372-Large.jpg`, alt: "Tai Chi practice 7", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
-  { src: `${WP}/2018/08/IMG_0897-Large.jpg`, alt: "Tai Chi practice 8", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
+  { src: `${G}/taichi-1.jpg`, alt: "Tai Chi practice 1", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
+  { src: `${G}/taichi-2.jpg`, alt: "Tai Chi practice 2", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
+  { src: `${G}/taichi-3.jpg`, alt: "Tai Chi practice 3", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
+  { src: `${G}/taichi-4.jpg`, alt: "Tai Chi practice 4", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
+  { src: `${G}/taichi-5.jpg`, alt: "Tai Chi practice 5", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
+  { src: `${G}/taichi-6.jpg`, alt: "Tai Chi practice 6", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
+  { src: `${G}/taichi-7.jpg`, alt: "Tai Chi practice 7", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
+  { src: `${G}/taichi-8.jpg`, alt: "Tai Chi practice 8", title: { he: "טאי צ'י", en: "Tai Chi" }, category: "taichi" },
 
   // === קונג פו (Kung Fu) ===
-  { src: `${WP}/2018/08/P9276663-Small.jpg`, alt: "Kung Fu training 1", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
-  { src: `${WP}/2018/08/DSCF1390-Small.jpg`, alt: "Kung Fu training 2", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
-  { src: `${WP}/2018/08/IMG_6098-Medium.jpg`, alt: "Kung Fu training 3", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
-  { src: `${WP}/2018/08/IMG_7410-Medium.jpg`, alt: "Kung Fu training 4", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
-  { src: `${WP}/2018/08/DSCF0967-Medium.jpg`, alt: "Kung Fu training 5", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
-  { src: `${WP}/2018/07/IMG_4078-Large.jpg`, alt: "Kung Fu training 6", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
-  { src: `${WP}/2018/07/DSC_6348-1.jpg`, alt: "Kung Fu training 7", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
-  { src: `${WP}/2018/07/DSC_6269-Large.jpg`, alt: "Kung Fu training 8", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
+  { src: `${G}/kungfu-1.jpg`, alt: "Kung Fu training 1", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
+  { src: `${G}/kungfu-2.jpg`, alt: "Kung Fu training 2", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
+  { src: `${G}/kungfu-3.jpg`, alt: "Kung Fu training 3", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
+  { src: `${G}/kungfu-4.jpg`, alt: "Kung Fu training 4", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
+  { src: `${G}/kungfu-5.jpg`, alt: "Kung Fu training 5", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
+  { src: `${G}/kungfu-6.jpg`, alt: "Kung Fu training 6", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
+  { src: `${G}/kungfu-7.jpg`, alt: "Kung Fu training 7", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
+  { src: `${G}/kungfu-8.jpg`, alt: "Kung Fu training 8", title: { he: "קונג פו", en: "Kung Fu" }, category: "kungfu" },
 ];
 
 export default function PhotoGalleryPage() {
@@ -141,7 +141,7 @@ export default function PhotoGalleryPage() {
                   height={400}
                   className="w-full h-48 sm:h-64 lg:h-72 object-cover grayscale contrast-[1.05] opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                   style={{ mixBlendMode: "multiply" }}
-                  unoptimized
+
                 />
                 <div className="absolute inset-0 bg-seal-red/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <span className="text-paper text-lg font-bold tracking-wide">
